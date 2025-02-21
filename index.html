@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наш сайт</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Кнопка для выдвигающегося меню -->
+  <button id="menu-toggle">☰</button>
+
+  <!-- Выдвигающееся меню -->
+  <nav id="sidebar">
+    <ul>
+      <li><a href="#home" class="nav-link">Главная</a></li>
+      <li><a href="#mods" class="nav-link">Модификации</a></li>
+      <li><a href="#birthdays" class="nav-link">Дни рождения</a></li>
+      <li><a href="#stats" class="nav-link">Статистика</a></li>
+      <li><a href="#server-info" class="nav-link">Информация о сервере</a></li>
+    </ul>
+  </nav>
+
+  <!-- Основной контент -->
+  <main>
+    <!-- Главная страница -->
+    <section id="home" class="active">
+      <div class="status-box">
+        <h1>Состояние сервера</h1>
+        <div id="server-status" class="status-indicator">Неактивно</div>
+        <p>Текущий IP: <span id="server-ip">127.0.0.1</span></p>
+      </div>
+    </section>
+
+    <!-- Модификации -->
+    <section id="mods" class="hidden">
+      <h1>Модификации</h1>
+      <div class="mod-buttons">
+        <button onclick="downloadMod('appleskin-forge-mc1.18.2-2.5.1.jar')">appleskin</button>
+        <button onclick="downloadMod('dynamiclights-1.18.6.jar')">dynamiclights</button>
+        <button onclick="downloadMod('FallingTree-1.18.2-3.5.5.jar')">FallingTree</button>
+        <button onclick="downloadMod('FarmersDelight-1.18.2-1.2.3.jar')">FarmersDelight</button>
+        <button onclick="downloadMod('journeymap-1.18.2-5.9.8-forge.jar')">journeymap</button>
+        <button onclick="downloadMod('tl_skin_cape_forge_1.18_1.18.2-1.25.jar')">tl_skin_cape_forge</button>
+        <button onclick="window.location.href='https://ru.files.me/u/57kkgydrhu'">TACZ (ссылка на файлообменник)</button>
+      </div>
+    </section>
+
+    <!-- Дни рождения -->
+    <section id="birthdays" class="hidden">
+      <h1>Дни рождения</h1>
+      <div class="birthday-container">
+        <div id="main-timer">
+          <div class="nickname">Загрузка...</div>
+          <div class="timer">00:00:00:00</div>
+        </div>
+        <div id="secondary-timers"></div>
+      </div>
+    </section>
+
+    <!-- Статистика -->
+    <section id="stats" class="hidden">
+      <h1>Статистика</h1>
+      <div class="stats-box">
+        <p>Команда существует: <span id="team-age">Загрузка...</span></p>
+        <p>Администрация: <span id="admins-list">Загрузка...</span></p>
+        <p>Участников: <span id="members-count">Загрузка...</span></p>
+      </div>
+    </section>
+
+    <!-- Информация о сервере -->
+    <section id="server-info" class="hidden">
+      <h1>Информация о сервере</h1>
+      <div class="tabs">
+        <button onclick="showTab('clans')" class="tab-button active">Кланы</button>
+        <button onclick="showTab('roles')" class="tab-button">Роли</button>
+        <button onclick="showTab('organizations')" class="tab-button">Организации</button>
+      </div>
+      <div id="clans" class="tab-content active">
+        <h2>Кланы</h2>
+        <div class="info-box">
+          <h3>PurpleWay</h3>
+          <img src="clan1.jpg" alt="Эмблема клана 1" class="logo">
+          <p>на этот пункт фантазии не хватило.</p>
+          <ul>
+            <li>George_Goodman</li>
+            <li>N/A</li>
+          </ul>
+        </div>
+      </div>
+      <div id="roles" class="tab-content">
+        <h2>Роли</h2>
+        <div class="info-box">
+          <table>
+            <tr>
+              <th>Участник</th>
+              <th>Роль</th>
+            </tr>
+            <tr>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+            <tr>
+              <td>N/A</td>
+              <td>N/A</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="organizations" class="tab-content">
+        <h2>Организации</h2>
+        <div class="info-box">
+          <h3>на будущее</h3>
+          <img src="org1.jpg" alt="Фото организации 1" class="logo">
+          <p>на этот пункт фантазии тоже не хватило.</p>
+          <ul>
+            <li>George_Goodman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
