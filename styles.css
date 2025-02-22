@@ -264,9 +264,9 @@ body {
   }
   
   .info-box .logo {
-    max-width: 100px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+    max-width: 250px;
+    margin-bottom: 50px;
+    border-radius: 50px;
   }
   
   .info-box ul {
