@@ -1,9 +1,9 @@
 // Данные для сайта
-const serverStatus = 0; // 1 - активно, 0 - неактивно
+const serverStatus = 1; // 1 - активно, 0 - неактивно
 const serverIP = "purplenet.aternos.me:24070";
 const teamCreationDate = new Date("2025-02-20"); // Дата создания команды
 const admins = ["quelli", "Ниона"];
-const membersCount = 12;
+const membersCount = 19;
 
 const birthdays = [
   { name: "@quellaw", date: "2000-09-27" },
@@ -12,7 +12,9 @@ const birthdays = [
   { name: "@Bloodydemon90", date: "2000-08-03" },
   { name: "@zavnes", date: "2000-06-13" },
   { name: "Беляш", date: "2000-10-01" },
-  { name: "@fracturedbody", date: "2000-02-29" },
+  { name: "@egor_xxc", date: "2000-03-15" },
+  { name: "@vikky_wikky", date: "2000-05-05" },
+  { name: "@mgpp14", date: "2000-11-26" },
 ];
 
 // Обновление состояния сервера
