@@ -1,5 +1,5 @@
 // Данные для сайта
-const serverStatus = 1; // 1 - активно, 0 - неактивно
+const serverStatus = 0; // 1 - активно, 0 - неактивно
 const serverIP = "purplenet.aternos.me:24070";
 const teamCreationDate = new Date("2025-02-20"); // Дата создания команды
 const admins = ["quelli", "Ниона"];
